@@ -8,11 +8,24 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Identificador de idade</h1>
     </header>
     <section>
-        <div>Testando...</div>
-        <div>1...2...3</div>
+        <div>
+            <p>Data de nascimento:
+            <input type="number" name="nasc" id="inasc">
+            </p>
+            <p>Sexo:
+            <input type="radio" name="radsex" id="imas" checked>
+            <label for="imas">Masculino</label>
+            <input type="radio" name="radsex" id="ifem">
+            <label for="ifem">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
     </section>
 
     <footer>&copy; Curso em video</footer>
